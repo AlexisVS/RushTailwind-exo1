@@ -11,14 +11,14 @@
 </head>
 
 <body>
-	<header class="w-full bg-gray-800 text-white flex py-8 uppercase font-bold justify-start ">
-		<div class="w-3/6 flex justify-center items-center">
+	<header class="w-full bg-gray-800 text-white flex flex-col py-8 uppercase font-bold justify-start lg:flex-row">
+		<div class="flex justify-center items-center mb-4 lg:w-1/2">
 			<a href="" class="text-3xl ml-2">Start CSS</a>
 		</div>
-		<nav class="ml-48">
-			<a href="" class="text-lg mx-4">Portfolio</a>
-			<a href="" class="text-lg mx-4">About</a>
-			<a href="" class="text-lg ml-4">Contact</a>
+		<nav class="flex justify-evenly lg:w-4/12 lg:ml-16 lg:justify-center">
+			<a href="" class="text-lg mx-4 lg:mx-6">Portfolio</a>
+			<a href="" class="text-lg mx-4 lg:mx-6">About</a>
+			<a href="" class="text-lg mx-4 lg:mx-6">Contact</a>
 		</nav>
 	</header>
 	<section class="bg-red-500 py-20 flex items-center justify-center flex-col">
@@ -420,60 +420,72 @@
 			</g>
 		</svg>
 		<h1 class="text-6xl font-bold uppercase py-10 text-white">Start CSS</h1>
-		<p class="text-white text-2xl">Graphic Artist - Web Designer - Illustrator</p>
+		<p class="text-white text-center text-2xl">Graphic Artist - Web Designer - Illustrator</p>
 	</section>
-	<section class="flex justify-center items-center flex-col">
-		<h2 class="text-5xl font-bold uppercase pb-5 pt-20 text-gray-700">Portfolio</h2>
-		<div class="w-7/12 mx-auto flex justify-between flex-wrap">
-			<img class="w-80 rounded-md pb-10" src="./public/img/portfolio/cabin.png" alt="">
-			<img class="w-80 rounded-md pb-10" src="./public/img/portfolio/cake.png" alt="">
-			<img class="w-80 rounded-md pb-10" src="./public/img/portfolio/circus.png" alt="">
-			<img class="w-80 rounded-md" src="./public/img/portfolio/game.png" alt="">
-			<img class="w-80 rounded-md" src="./public/img/portfolio/safe.png" alt="">
-			<img class="w-80 rounded-md" src="./public/img/portfolio/submarine.png" alt="">
+	<section class="flex justify-center items-center flex-col py-12">
+		<h2 class="text-5xl font-bold uppercase pb-5 lg:pb-0 text-gray-700">Portfolio</h2>
+		<div class="w-10/12 lg:w-8/12 sm:flex sm:flex-wrap sm:justify-evenly">
+			<img class="my-8 rounded-xl sm:w-5/12 lg:w-3/12 lg:mx-5" src="./public/img/portfolio/cabin.png" alt="">
+			<img class="my-8 rounded-xl sm:w-5/12 lg:w-3/12 lg:mx-5" src="./public/img/portfolio/cake.png" alt="">
+			<img class="my-8 rounded-xl sm:w-5/12 lg:w-3/12 lg:mx-5" src="./public/img/portfolio/circus.png" alt="">
+			<img class="my-8 rounded-xl sm:w-5/12 lg:w-3/12 lg:mx-5" src="./public/img/portfolio/game.png" alt="">
+			<img class="my-8 rounded-xl sm:w-5/12 lg:w-3/12 lg:mx-5" src="./public/img/portfolio/safe.png" alt="">
+			<img class="my-8 rounded-xl sm:w-5/12 lg:w-3/12 lg:mx-5" src="./public/img/portfolio/submarine.png" alt="">
 		</div>
 	</section>
-	<section class="">
-		<h2 class="">About</h2>
-		<p class="">Freelancer is a free bootstrap theme created by start Bootstrap. The download includes the complete
-			source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy
-			customization. You can create your own custom avatar for the masthead, change the icon in the dividers, and
-			add your email address to the contact form to make it fully functional!</p>
+	<section class="bg-red-500 py-12 lg:py-28">
+		<h2 class="text-5xl font-bold uppercase text-center mb-6 text-white">About</h2>
+		<div class="lg:flex justify-center">
+			<p class="text-xl text-white mx-3 lg:m-0 lg:w-86 lg:mx-5">Freelancer is a free bootstrap theme created by start Bootstrap. The download includes the complete
+				source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy
+				customization.</p>
+			<p class="text-xl text-white mx-3 mt-4 lg:m-0 lg:w-86 lg:mx-5">You can create your own custom avatar for the masthead, change the icon in the dividers, and
+				add your email address to the contact form to make it fully functional!</p>
+		</div>
 	</section>
-	<section class="">
-		<form action="" class="">
-			<h2 class="">Contact me</h2>
-			<input type="text" placeholder="Name">
-			<input type="text" placeholder="Email Address">
-			<input type="text" placeholder="Phone Number">
-			<input type="text" class="" placeholder="Message">
-			<button class="">Send</button>
+	<section class="py-10 lg:py-28">
+		<form action="" class="flex flex-col items-center md:w-192 md:mx-auto">
+			<h2 class="text-5xl font-bold uppercase text-center mb-16 text-gray-700">Contact me</h2>
+			<input class="w-11/12 text-xl lg:text-2xl py-2 border-b placeholder-gray-500 lg:py-10" type="text" placeholder="Name">
+			<input class="w-11/12 text-xl lg:text-2xl py-2 border-b placeholder-gray-500 lg:py-10" type="text" placeholder="Email Address">
+			<input class="w-11/12 text-xl lg:text-2xl py-2 border-b placeholder-gray-500 lg:py-10" type="text" placeholder="Phone Number">
+			<input class="w-11/12 text-xl lg:text-2xl py-2 border-b placeholder-gray-500 lg:py-10 pb-16 lg:pb-36" type="text" class="" placeholder="Message">
+			<button class="self-start ml-4 mt-4 bg-red-500 py-2 px-5 font-bold text-lg text-white rounded-md sm:ml-6 md:ml-8 lg:ml-8 lg:mt-12 lg:py-5 lg:px-8">Send</button>
 		</form>
 	</section>
-	<footer>
-		<div class="">
-			<div class="">
-				<p class="">Location</p>
-				<p class="">2215 John Daniel Drive Clark, MO 65243</p>
+	<footer class=" bg-gray-800">
+		<div class="bg-gray-800 text-white py-10 lg:flex lg:justify-evenly lg:py-24 lg:w-8/12 lg:mx-auto">
+			<div class="flex flex-col items-center w-76 mx-auto">
+				<p class="text-2xl font-bold text-center uppercase pb-3">Location</p>
+				<p class="text-center text-lg">2215 John Daniel Drive Clark,<br> MO 65243</p>
 			</div>
-			<div class="p">Around The WEB
-				<div class="">
-					<i class="fab fa-facebook-f"></i>
-					<i class="fab fa-twitter"></i>
-					<i class="fab fa-linkedin-in"></i>
-					<i class="fab fa-dribbble"></i>
+			<div class="flex flex-col items-center w-76 mx-auto">
+				<p class="text-2xl font-bold text-center uppercase py-3">Around The WEB</p>
+				<div class="text-center pb-3 flex justify-between w-60">
+					<div class="w-10 h-10 flex items-center justify-center border-2 rounded-full p-5">
+						<i class="fab fa-facebook-f text-xl"></i>
+					</div>
+					<div class="w-10 h-10 flex items-center justify-center border-2 rounded-full p-5">
+						<i class="fab fa-twitter text-xl"></i>
+					</div>
+					<div class="w-10 h-10 flex items-center justify-center border-2 rounded-full p-5">
+						<i class="fab fa-linkedin-in text-xl"></i>
+					</div>
+					<div class="w-10 h-10 flex items-center justify-center border-2 rounded-full p-5">
+						<i class="fab fa-dribbble text-xl"></i>
+					</div>
 				</div>
 			</div>
-			<div class="">
-				<p class="">About Freelancer</p>
-				<p class="">Freelance is a free to use, MIT licensed Bootstrap theme created by <a href=""
-						class="">Start Bootstrap</a> .</p>
+			<div class="flex flex-col items-center w-76 mx-auto">
+				<p class="text-2xl font-bold text-center uppercase py-3">About Freelancer</p>
+				<p class="text-center w-76 text-lg font-semibold">Freelance is a free to use, MIT licensed Bootstrap theme created by <a href="" class="text-green-600">Start Bootstrap</a> .</p>
 			</div>
 		</div>
-		<div class="">
-			<p class="">Copyright © Your Website 2020</p>
+		<div class="bg-gray-900 py-5">
+			<p class="text-sm text-center text-white">Copyright © Your Website 2020</p>
 		</div>
 	</footer>
+	<script src="./node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
 </body>
 
 </html>
